@@ -4,4 +4,9 @@ branches:
 projects:
   Events:
     path: ""
+    libs: 
+      - src: poggit/libasynql/libasynql
+        version: ^3.0
+      - src: Atomization/gui/gui
+        version: ^1.0.1
 ...
