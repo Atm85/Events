@@ -1,0 +1,8 @@
+database:
+  worker-limit: 2
+  type: "mysql"
+  mysql:
+    host: "127.0.0.1"
+    username: "root"
+    password: ""
+    schema: "eventManager"
