@@ -43,6 +43,10 @@ class Form {
                 $menu->setTitle(color::BOLD.color::DARK_AQUA."Upcoming Events!");
                 if (empty($rows)) {
                     $menu->setContent("No Events Were Found!");
+					$button = color::BOLD.color::DARK_RED."Create Event";
+                    foreach ($data as $index) {
+                        if ($index['COUNT(*)'] !== 0) $menu->addButton($button);
+                    }
                 } else {
                     foreach ($rows as $row) {
                         $day = $row['day'];

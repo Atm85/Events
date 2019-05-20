@@ -13,6 +13,7 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerToggleSneakEvent;
 use pocketmine\plugin\PluginBase;
 
+
 class Main extends PluginBase implements Listener {
 
     /** @var Main */
@@ -41,7 +42,6 @@ class Main extends PluginBase implements Listener {
     }
 
     public function onSneak(PlayerToggleSneakEvent $event): void {
-        Form::menu($event->getPlayer());
-//        GUI::send($event->getPlayer(), "event_creator");
+		$player = $event->getPlayer();
     }
 }
