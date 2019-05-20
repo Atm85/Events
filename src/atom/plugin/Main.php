@@ -40,8 +40,4 @@ class Main extends PluginBase implements Listener {
     public static function getInstance(): Main {
         return self::$instance;
     }
-
-    public function onSneak(PlayerToggleSneakEvent $event): void {
-		$player = $event->getPlayer();
-    }
 }
