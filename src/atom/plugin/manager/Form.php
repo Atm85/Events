@@ -55,11 +55,15 @@ class Form {
                         $year = substr($row['year'], -2);
                         $rawdate = [$day, $month, $year];
                         $datetime = implode("/", $rawdate);
-                        if (DateTime::createFromFormat('d/m/y', $datetime) == new DateTime()) {
+                        $today = new DateTime();
+                        $today->setTime(00, 00, 00, 00);
+                        $eventDate = DateTime::createFromFormat('d/m/y', $datetime);
+                        $eventDate->setTime(00, 00, 00, 00);
+                        if ($eventDate == $today) {
                             $text = color::BOLD.color::AQUA.$row['month'].' - '.$row['day'].' - '.$row['year'];
                             $menu->addButton($text);
                         }
-                        if (DateTime::createFromFormat('d/m/y', $datetime) > new DateTime()) {
+                        if ($eventDate > $today) {
                             $text = color::BOLD.color::DARK_GREEN.$row['month'].' - '.$row['day'].' - '.$row['year'];
                             $menu->addButton($text);
                         }

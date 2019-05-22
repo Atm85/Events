@@ -29,8 +29,6 @@ class Main extends PluginBase implements Listener {
         GUI::register("event_creator", Form::event_creator());
         GUI::register("admin", Form::admin());
         GUI::register("success", Form::success());
-
-        var_dump(new \DateTime("now"));
     }
 
     public function onDisable(): void {
