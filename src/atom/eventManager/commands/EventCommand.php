@@ -1,11 +1,11 @@
 <?php
 
 
-namespace atom\plugin\commands;
+namespace atom\eventManager\commands;
 
 
 use atom\gui\GUI;
-use atom\plugin\manager\Form;
+use atom\eventManager\manager\Form;
 use pocketmine\command\CommandSender;
 use pocketmine\command\PluginCommand;
 use pocketmine\Player;

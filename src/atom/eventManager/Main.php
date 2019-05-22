@@ -1,13 +1,13 @@
 <?php
 
 
-namespace atom\plugin;
+namespace atom\eventManager;
 
 
 use atom\gui\GUI;
-use atom\plugin\commands\EventCommand;
-use atom\plugin\manager\Database;
-use atom\plugin\manager\Form;
+use atom\eventManager\commands\EventCommand;
+use atom\eventManager\manager\Database;
+use atom\eventManager\manager\Form;
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
 

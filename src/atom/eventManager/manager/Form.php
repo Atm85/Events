@@ -1,14 +1,14 @@
 <?php
 
 
-namespace atom\plugin\manager;
+namespace atom\eventManager\manager;
 
 
 
 use atom\gui\type\CustomGui;
 use atom\gui\type\ModalGui;
 use atom\gui\type\SimpleGui;
-use atom\plugin\Main;
+use atom\eventManager\Main;
 use DateTime;
 use pocketmine\form\Form as GUI;
 use pocketmine\Player;

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace atom\plugin\manager;
+namespace atom\eventManager\manager;
 
 
-use atom\plugin\Main;
+use atom\eventManager\Main;
 use poggit\libasynql\DataConnector;
 use poggit\libasynql\libasynql;
 
