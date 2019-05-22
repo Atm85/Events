@@ -1,5 +1,7 @@
 # Events
 ## Events - Engage with your players
+[![HitCount](http://hits.dwyl.io/Atomization/Events.svg)](http://hits.dwyl.io/Atomization/Events)
+[![](https://poggit.pmmp.io/shield.state/EventManager)](https://poggit.pmmp.io/p/EventManager)
 
 Easily create real life events on your pocketmine server!
 
@@ -14,7 +16,7 @@ This plugin uses mysqli to store information about events and managers.
 
 # virions 
 
-if you download this plugin from poggit, then there is no need to install extra dependencies as poogit already injects the virion into the plugin!
+if you download this plugin from poggit, then there is no need to install extra dependencies as poggit already injects the virion into the plugin!
 
 if running from source; (NOT recommended) install these virions
 
