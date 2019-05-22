@@ -78,8 +78,9 @@ class Form {
                     if ($data === $button) \atom\gui\GUI::send($player, "event_creator");
                     foreach ($rows as $row) {
                         $text = color::BOLD.color::DARK_GREEN.$row['month'].' - '.$row['day'].' - '.$row['year'];
+                        $today = color::BOLD.color::AQUA.$row['month'].' - '.$row['day'].' - '.$row['year'];
                         $description = color::AQUA.$row['description'];
-                        if ($data === $text) {
+                        if ($data === $text || $data === $today) {
                             $content = $text."\n".$description;
                             $event = new ModalGui();
                             $event->setTitle(color::BOLD.$row['name']);
