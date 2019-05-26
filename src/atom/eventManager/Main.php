@@ -24,11 +24,16 @@ class Main extends PluginBase implements Listener {
 
     public function onEnable(): void {
         self::$instance = $this;
-        Database::connect();
-        $this->getServer()->getPluginManager()->registerEvents($this, $this);
-        GUI::register("event_creator", Form::event_creator());
-        GUI::register("admin", Form::admin());
-        GUI::register("success", Form::success());
+
+        if (in_array("mysqli", get_loaded_extensions())) {
+            Database::connect();
+            $this->getServer()->getPluginManager()->registerEvents($this, $this);
+            GUI::register("event_creator", Form::event_creator());
+            GUI::register("admin", Form::admin());
+            GUI::register("success", Form::success());
+        } else{
+            $this->getServer()->getPluginManager()->disablePlugin($this);
+        }
     }
 
     public function onDisable(): void {
