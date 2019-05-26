@@ -2,6 +2,7 @@
 ## Events - Engage with your players
 [![HitCount](http://hits.dwyl.io/Atomization/Events.svg)](http://hits.dwyl.io/Atomization/Events)
 [![](https://poggit.pmmp.io/shield.state/EventManager)](https://poggit.pmmp.io/p/EventManager)
+<img src='https://raw.githubusercontent.com/Atomization/Events/master/img/events.png'/>
 
 Easily create real life events on your pocketmine server!
 
