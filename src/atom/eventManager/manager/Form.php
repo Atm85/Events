@@ -246,8 +246,8 @@ class Form {
         $gui->setContent("Successfully created event!");
         $gui->setButton1(color::BOLD.color::DARK_GREEN."Menu");
         $gui->setButton2(color::BOLD.color::DARK_RED."EXIT");
-        $gui->setAction(function (Player $player, $data): void {
-            self::menu($player);
+        $gui->setAction(function (Player $player, bool $data): void {
+            if ($data) self::menu($player);
         });
         return $gui;
     }
