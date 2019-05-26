@@ -11,6 +11,11 @@ Easily create real life events on your pocketmine server!
 - run command `/events` to view events AND create events IF your an event manager
 - run command `/events manage` if your op to add event managers
 
+# How to setup
+```yaml
+Video: "coming soon"
+```
+
 # IMPORTANT
 This plugin uses mysqli to store information about events and managers.
 
