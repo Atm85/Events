@@ -2,3 +2,5 @@ name: EventManager
 api: 3.8.2
 version: 1.0.0
 main: atom\eventManager\Main
+extensions:
+  - mysqli
