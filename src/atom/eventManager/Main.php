@@ -19,7 +19,7 @@ class Main extends PluginBase implements Listener {
 
     public function onLoad(): void {
         $map = $this->getServer()->getCommandMap();
-        $map->register("events", new EventCommand("events", $this));
+        $map->register("eventManager", new EventCommand("events", $this));
     }
 
     public function onEnable(): void {
